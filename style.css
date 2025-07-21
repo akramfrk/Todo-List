@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./images/bg-img.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.add-task input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+.add-task input,
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    min-height: 70vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    height: 100%;
+}
+
+.header {
+    width: 90%;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 128, 0, 0.05);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.add-task {
+    width: 90%;
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #cdcdcd;
+    border-radius: 5px;
+}
+
+.add-task input {
+    width: 70%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.add-task .submit {
+    width: 25%;
+    min-width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(75, 75, 250);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-tasks {
+    width: 90%;
+    max-width: 960px;
+    background-color: #cdcdcd;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.completed-tasks {
+    width: 90%;
+    max-width: 960px;
+    background-color: #cdcdcd;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.completed-tasks .tasks {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.completed-tasks .tasks li {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    opacity: 0.6;
+}
+
+.completed-tasks .tasks li span {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+    padding: 5px 0;
+    text-decoration: line-through;
+}
+
+.completed-tasks .tasks li .remove {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.all-tasks .tasks {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.all-tasks .tasks .no-tasks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    opacity: 0.7;
+}
+
+.completed-tasks .tasks .no-completed-tasks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    opacity: 0.7;
+}
+
+.all-tasks .tasks li {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.all-tasks .tasks li span {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+    padding: 5px 0;
+}
+
+.all-tasks .tasks li .delete {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.all-tasks .tasks li .completed {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: seagreen;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.clear .clear-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #323233;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .main {
+        gap: 15px;
+        padding: 15px 0;
+    }
+    
+    .add-task {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .add-task input {
+        width: 100%;
+    }
+    
+    .add-task .submit {
+        width: 100%;
+    }
+    
+    .all-tasks .tasks li,
+    .completed-tasks .tasks li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        min-height: auto;
+    }
+    
+    .all-tasks .tasks li .delete,
+    .all-tasks .tasks li .completed,
+    .completed-tasks .tasks li .remove {
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 10px;
+    }
+    
+    .add-task,
+    .all-tasks {
+        width: 95%;
+    }
+    
+    .container {
+        min-height: 80vh;
+    }
+    
+    .all-tasks .tasks li,
+    .completed-tasks .tasks li {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .add-task input,
+    .add-task .submit,
+    .all-tasks .tasks li .delete,
+    .all-tasks .tasks li .completed,
+    .completed-tasks .tasks li .remove {
+        font-size: 14px;
+    }
+    
+    .header {
+        font-size: 16px;
+    }
+}
