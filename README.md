@@ -44,11 +44,11 @@ _(No server or dependencies required!)_
 
 ### **Desktop View**
 
-[desktop-view](/images/desktop.png)
+[desktop-view](./images/desktop.png)
 
 ### **Mobile View**
 
-[mobile-view](/images/mobile.png)
+[mobile-view](./images/mobile.png)
 
 ---
 
